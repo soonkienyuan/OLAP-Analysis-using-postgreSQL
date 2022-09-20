@@ -125,7 +125,23 @@ When it was necessary, various transformation procedures, including drop table, 
 
 
 
+## Results and Data Analysis
 
+Tableau excels in working with relational databases, and while it can connect to OLAP cubes, doing so duplicates Tableau's aggregation and hierarchy features. Tableau is also suited for a variety of non-SQL and big data solutions, such as the direct Google Big Query connector.
+
+- Bradley Beal, who plays for the Cleveland Cavaliers, is the player who is both the most cost effective and the most underrated that we discovered using OLAP analysis in 2021.
+
+- New Orleans Pelicans had the highest pick among all teams, this indicates that they are the most likely team to be likely to succeed and potential.
+
+## Challenges and Conclusion
+
+- Data in modern computing is stored in a wide variety of locations and formats, which, with a few exceptions, are incompatible with one another, we need to construct a complicated ETL pipeline.
+
+- In certain circumstances, a non-SQL database is a much better option than an RDBMS due to the complex ETL process and the requirement of a pre-defined format.
+
+- PostgreSQL is unsuitable for use as a data warehouse over the long term, particularly if your company is growing rapidly and generating large amounts of data.
+
+- Due to the fact that the formats, data structures, and logical schemas of various databases are all distinct from one another. The process of migrating data from RDBMS to data warehouse is limited by the lack of available resources and free solutions in internet. It was necessary to spend money on hiring a data warehousing specialist to complete it.
 
 
 
