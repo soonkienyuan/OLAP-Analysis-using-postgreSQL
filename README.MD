@@ -20,7 +20,7 @@ This project is aimed to help in properly choosing a roster that is the most opt
 
 The solution is to find players that have adequate skills and pay but can further show their potential on the field by playing the correct position in the games.
 
-## Isuuse faced
+## Issuses faced
 
 1. The main issue in building a team is the limited budget presented to a team that is only newly formed.
 
