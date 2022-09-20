@@ -79,17 +79,16 @@ To load into your PosgreSQL, please follow steps below:
 4. right click it and select restore
 
 ### ERD of RDBMS (basket_db3)
+ERD- [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/database_erd.pgerd%20(1).png)
 - contains 16 tables.
 - Because few tables have more than 50 columns or attributes, it is not possible to present as a figure on this page.
 - ERD was built using PostgreSQL, and that PostgreSQL also auto aligned the ERD so that it appears in the correct order.
 
-ERD- [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/database_erd.pgerd%20(1).png)
+### data warehosue Data schema (basket_dw)
 
+draw.io version - [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/Galaxy%20schema.jpg)
 
-
-### data warehosue Data schema 
-
-
+Full version - [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/Galaxy%20schema%20in%20erd.png)
 
 
 
