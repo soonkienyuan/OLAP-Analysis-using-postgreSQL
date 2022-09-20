@@ -86,9 +86,43 @@ ERD- [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL
 
 ### data warehosue Data schema (basket_dw)
 
+This is the final transformed data warehouse data schema
+
 draw.io version - [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/Galaxy%20schema.jpg)
 
 Full version - [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/Galaxy%20schema%20in%20erd.png)
+
+It is a galaxy schema.
+
+## ETL Pipeline
+
+### ETL (from data source to RDBMS)
+
+![ETL 1](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/ETL%20Pipeline.jpg?raw=true)
+
+Due to the fact that SQLite and PostgreSQL implement distinct data types, which cannot be directly exchanged with each other. We will use python to perform ETL before the data goes into database.
+
+1. Download and import SQLite, SQLAlchemy and pandas library.
+3. Use connect function that provided by SQLite python library to connect the SQLite database.
+4. Run a query in python that displays all accessible tables to see what kinds of tables SQLite has and how many of each kind there are. (query= "SELECT name FROM sqlite_master WHERE type='table';")
+5. Create an engine that based on PostgreSQL for the next step.
+6. Use read_sql_query() function provided by pandas to read data from the SQLite database, and then convert into pandas data frame
+7. In the final step, the data frame is converted to SQL using the dataframe.to sql() function, and then the engine created in step 4 is used to insert data into the database by running SQL operations.
+
+### ELT (from RDBMS to Data Warehosue)
+
+![ETL 1](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/ETL%20pipeline2.jpg?raw=true)
+
+Since we use the same platform (PostgreSQL) for both RDBMS and data warehousing. So, we don't have to transform the data before loading it into a data warehouse.
+
+When it was necessary, various transformation procedures, including drop table, sort table, join table, aggregate table, and Lookup, were applied.
+
+1. Drop table - to remove a table and all its rows - we succeed dropped 9 tables for OLAP in data warehouse, basket_dw 
+2. Aggregate table - Creating aggregate tables reduces data warehouse access. More than one aggregate table can improve schema performance. (MIN, MAX,SUM,COUNT,AVG and so on) 
+3. Joining table - Joining multiple attributes into one. (Inner join, outer join, full join and so on) 
+4. Sorting - sorting data or row data or tuple based on the basis of some attribute. (Order by)
+
+
 
 
 
