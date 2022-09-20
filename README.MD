@@ -3,9 +3,10 @@
 # OLAP-BASED ANALYSIS OF DATA FINDING THE MOST COST EFFECTIVE, UNDERRATED, OR SKILLED BASKETBALL PLAYERS.
 
 database - OLTP
+
 data warehosue - OLAP
 
-In this project, we will construct a database and data warehouse from scratch to store NBA basketball player data in order to demonstrate and gain experience setting up a database and data warehouse, as well as establishing a relationship between the entities.
+**In this project, we will construct a database and data warehouse from scratch to store NBA basketball player data in order to demonstrate and gain experience setting up a database and data warehouse, as well as establishing a relationship between the entities.**
 
 Thus, perform OLAP analysis in data warehouse and Tableau to find the solution.
 
@@ -61,6 +62,32 @@ Hence, transforming step occur in the data warehouse. (ELT)
 Lastly, Machine learning and analytic included OLAP and visualization can be performed by connecting to the data warehouse
 
 In detail, Tableau will used to perform the OLAP and visualization by connecting to the data warehouse we developed.
+
+## Database 
+
+The names of the RDBMS and data warehouse are listed below.
+
+RDBMS - basket_db3 
+
+data warehouse - basket_dw_backup
+
+To load into your PosgreSQL, please follow steps below:
+
+1. Download it
+2. open pgAdmin
+3. create a ner database or use existing database
+4. right click it and select restore
+
+### ERD of RDBMS (basket_db3)
+- contains 16 tables.
+- Because few tables have more than 50 columns or attributes, it is not possible to present as a figure on this page.
+- ERD was built using PostgreSQL, and that PostgreSQL also auto aligned the ERD so that it appears in the correct order.
+
+ERD- [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/image/database_erd.pgerd%20(1).png)
+
+
+
+### data warehosue Data schema 
 
 
 
