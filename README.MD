@@ -67,9 +67,9 @@ In detail, Tableau will used to perform the OLAP and visualization by connecting
 
 The names of the RDBMS and data warehouse are listed below.
 
-RDBMS - basket_db3 
+RDBMS - basket_db3 [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/Database%20(pgAdmin)/basket_db3)
 
-data warehouse - basket_dw_backup
+data warehouse - basket_dw_backup [click here](https://github.com/soonkienyuan/OLAP-Analysis-using-postgreSQL/blob/main/Database%20(pgAdmin)/basket_dw_backup)
 
 To load into your PosgreSQL, please follow steps below:
 
